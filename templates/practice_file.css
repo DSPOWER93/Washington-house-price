@@ -1,0 +1,69 @@
+/* tag{
+    property: value
+} */
+
+/* Making all h2 as Cursive */
+h2{
+    color: rgb(118, 134, 139);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li{
+    color: rgb(9, 40, 179);
+    background-color: rgba(240, 255, 255, 0.658);
+    border: brown;
+    border-style: dotted;
+    border-width: 2px;
+}
+
+body{
+    background-color: rgba(229, 235, 231, 0.932);
+}
+/* This is Telling to all Div to give this color as background unless specified */
+div{
+    color: rgb(9, 40, 179);
+    background-color: grey;
+    border: brown;
+    border-style: dotted;
+    border-width: 2px;  
+}
+
+/* How to use CSS in selectors */
+
+/* Using it on Class */
+.Class1{
+    color: green;
+    background-color:  magenta;
+}
+
+.Class2{
+    color: blueviolet;
+}
+
+/* Using it on specific IDs */
+
+#var1{
+    Color: red;
+}
+
+#h2var{
+
+    color: darkorange;
+}
+
+#List_heading{
+    color: maroon;
+    background-color: rgba(194, 223, 29, 0.897);
+    border: rgb(54, 42, 165);
+    border-style: dotted;
+    border-width: 2px;
+}
+
+#lower_heading{
+    text-decoration: underline;
+    font-family: 'Manjari', sans-serif;
+}
+
+#Italic_para{
+    font-style: italic;
+}

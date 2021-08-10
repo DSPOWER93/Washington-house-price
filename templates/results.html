@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results Here</title>
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+     <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+    <style>
+    #mapid { height: 400px;
+             width: 850px;
+             margin-left: 15%;
+             margin-top: 0px;
+     }
+    #heading1{
+    margin-top:80px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: 20%;
+    }
+    #heading2{
+    margin-top:0px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: 30%;
+    }
+    body{
+    background-color: rgb(255, 254, 244);
+    }
+    </style>
+<!--Script to enter the co-ordinates for the Map-->
+<!--    setView([lat,long] , zoom Level)-->
+
+
+</head>
+<body>
+    <h1 id= "heading1" >Price of searched Property is Approx ${{result}}K</h1>
+
+    <h2 id= "heading2">Here is the glimpse of Address on Map:</h2>
+
+    <div id="mapid"></div>
+
+
+<script>
+        var mymap = L.map('mapid').setView([{{lat}}, {{lng * -1}}], 13);
+        var circle = L.circle([{{lat}}, {{lng * -1}}], {
+        color: 'green',
+        fillColor: 'green',
+        fillOpacity: 0.1,
+        radius: 800
+        }).addTo(mymap);
+        const attribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+        const tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+        const tiles = L.tileLayer(tileUrl,{attribution});
+        tiles.addTo(mymap);
+
+
+    </script>
+</body>
+</html>
