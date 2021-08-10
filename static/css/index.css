@@ -1,0 +1,130 @@
+
+.broaden{
+    display:inline-block;
+    padding:200px 10px;
+    line-height:140%;
+}
+
+
+
+input {
+    width: 23ch;
+    height: 4.9ch;
+    background-color: rgb(240, 233, 224);
+    border-radius: 15px;
+}
+
+/* For Bedrooms */
+#bedrooms{
+    -webkit-appearance: none;
+    height: 7px;
+    
+}
+#amount{
+    font-size: x-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+    
+}
+/* For Bathrooms */
+#bathrooms{
+    -webkit-appearance: none;
+    height: 7px;
+}
+#totalbathroom{
+    font-size: x-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+}
+/* For Floors */
+#floors{
+    -webkit-appearance: none;
+    height: 7px;
+}
+#Total_floors{
+    font-size: x-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+}
+/* For View Sides */
+#View_side{
+    -webkit-appearance: none;
+    height: 7px;
+}
+#Total_Views{
+    font-size: x-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+}
+
+/* For conditions*/
+#condition{
+    -webkit-appearance: none;
+    height: 7px;
+}
+#final_condition{
+    font-size: x-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+}
+
+/* #view_button{
+    margin-left: 15%;
+} */
+
+
+#condition_button{
+    margin-left: 1%;
+}
+
+
+#water_front{
+    margin-left: 1.2%;
+}
+
+input.checks{
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+}
+
+
+input.years{
+    width: 15ch;
+    height: 4.9ch;
+    background-color: rgb(240, 233, 224);
+    border-radius: 15px;
+}
+
+body {
+    text-align: left;
+    background-color: rgb(245, 255, 199);
+    
+    
+}
+h2{
+text-align: center;
+}
+
+#street_address{
+  width: 40ch;
+  height: 4.9ch;
+  background-color: rgb(240, 233, 224);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+
+.search_select_box select{
+    background-color: rgb(240, 233, 224);
+    border-radius: 15px;
+    height: 4.9ch;
+}
+
+
+form{
+    height: 50%;
+}
+
+
+
