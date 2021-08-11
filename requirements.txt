@@ -1,1 +1,7 @@
-pandas==1.0.5
+Flask_WTF==0.15.1
+WTForms==2.3.3
+joblib==0.16.0
+pandas
+Flask==1.1.2
+numpy
+geocoder==1.38.1
